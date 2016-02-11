@@ -109,6 +109,9 @@ md-color-picker .md-color-picker-input-container .md-color-picker-clear md-icon,
   top: 0px;
   opacity: 1;
 }
+.md-color-picker-container .md-color-picker-preview .md-color-picker-tabs {
+  width: 100%;
+}
 .md-color-picker-container .md-color-picker-preview .md-color-picker-tabs .md-tab,
 .md-color-picker-container .md-color-picker-preview .md-color-picker-tabs md-tabs-wrapper,
 .md-color-picker-container .md-color-picker-preview .md-color-picker-tabs md-tabs-canvas,
