@@ -299,7 +299,7 @@ spectrumLinkFn.extra = function() {
 
 angular.module('mdColorPicker', [])
 	.run(['$templateCache', function ($templateCache) {
-		//icon resource should not be dependent  
+		//icon resource should not be dependent
 		//credit to materialdesignicons.com
 		var shapes = {
 			'clear': '<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>',
@@ -392,6 +392,7 @@ angular.module('mdColorPicker', [])
 				random: '@',
 				openOnInput: '@',
 				hasBackdrop: '@',
+				onlyPreview: '@',
 				clickOutsideToClose: '@'
 			},
 			controller: ['$scope', '$element', '$mdDialog', '$mdColorPicker', function( $scope, $element, $mdDialog, $mdColorPicker ) {

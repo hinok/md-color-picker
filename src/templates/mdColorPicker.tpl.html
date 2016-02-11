@@ -1,4 +1,4 @@
-<div class="md-color-picker-input-container" layout="row">
+<div ng-if="!onlyPreview" class="md-color-picker-input-container" layout="row">
 	<div class="md-color-picker-preview md-color-picker-checkered-bg" ng-click="showColorPicker()">
 		<div class="md-color-picker-result" ng-style="{background: value}"></div>
 	</div>
@@ -9,4 +9,10 @@
 	<md-button class="md-icon-button md-color-picker-clear" ng-if="value" ng-click="clearValue();" aria-label="Clear Color">
 		<md-icon md-svg-icon="clear.svg"></md-icon>
 	</md-button>
+</div>
+
+<div ng-if="onlyPreview" class="md-color-picker-input-container" layout="row">
+	<div class="md-color-picker-preview md-color-picker-checkered-bg" ng-click="showColorPicker()">
+		<div class="md-color-picker-result" ng-style="{background: value}"></div>
+	</div>
 </div>
